@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/textViewTeam1"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:textAlignment="center"
+        app:srcCompat="@mipmap/suecia" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/botaoNegTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="alterarPlacar"
+            app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+        <TextView
+            android:id="@+id/textViewPlacar1"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/botaoPosTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="alterarPlacar"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/textViewTeam2"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:textAlignment="center"
+        app:srcCompat="@mipmap/netherlands" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/botaoNegTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="alterarPlacar"
+            app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+        <TextView
+            android:id="@+id/textViewPlacar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/botaoPosTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="alterarPlacar"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
